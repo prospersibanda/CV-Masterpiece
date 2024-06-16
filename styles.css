@@ -1,107 +1,110 @@
-
 body {
-  font-family: "Arial", sans-serif;
+  font-family: 'Arial', sans-serif;
   line-height: 1.6;
   background-color: #f4f4f4;
+  color: #333;
   margin: 0;
   padding: 0;
 }
+
 .container {
   max-width: 900px;
   margin: 20px auto;
   padding: 20px;
   background: #fff;
-  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
+
 .header {
   display: flex;
   align-items: center;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 10px;
   margin-bottom: 20px;
 }
-.header img {
+
+.profile-img {
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
   margin-right: 20px;
 }
+
 .header h1 {
   margin: 0;
-  font-size: 2.5em;
-  color: #333;
+  font-size: 2em;
+  color: #4CAF50;
 }
+
 .header p {
-  margin: 5px 0 0;
-  color: #777;
+  margin: 5px 0;
+  color: #555;
 }
-.section {
-  margin-bottom: 30px;
-}
+
 .section h2 {
-  border-bottom: 2px solid #ddd;
+  border-bottom: 2px solid #4CAF50;
   padding-bottom: 5px;
-  margin-bottom: 20px;
-  color: #333;
-  font-size: 1.8em;
+  color: #4CAF50;
 }
-.skills .skill {
-  margin-bottom: 10px;
+
+.section ul, .section table {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-.skills .star {
-  color: gold;
+
+.section ul li {
+  margin: 10px 0;
 }
-table {
+
+.section table {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 20px;
+  margin-top: 10px;
 }
-table,
-th,
-td {
+
+.section table th, .section table td {
+  padding: 10px;
   border: 1px solid #ddd;
 }
-th,
-td {
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  background: #f4f4f4;
   padding: 10px;
-  text-align: left;
+  border-radius: 5px;
+  flex: 1 1 calc(50% - 10px);
+  display: flex;
+  justify-content: space-between;
 }
-th {
-  background-color: #f4f4f4;
+
+.skill span {
+  font-weight: bold;
 }
+
+.star {
+  color: gold;
+}
+
 .footer {
   text-align: center;
-  padding: 10px;
-  background: #f4f4f4;
-  border-radius: 10px;
+  padding: 10px 0;
+  border-top: 2px solid #4CAF50;
+  margin-top: 20px;
 }
+
 .footer a {
-  color: #333;
+  color: #4CAF50;
   text-decoration: none;
   margin: 0 10px;
 }
+
 .footer a:hover {
   text-decoration: underline;
-}
-.additional-section {
-  margin-bottom: 30px;
-}
-.additional-section h3 {
-  color: #333;
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-.additional-section ul {
-  list-style-type: disc;
-  margin-left: 20px;
-}
-@media (max-width: 600px) {
-  .header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .header img {
-    margin-bottom: 10px;
-  }
 }
